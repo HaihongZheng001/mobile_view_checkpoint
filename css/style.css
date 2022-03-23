@@ -28,8 +28,7 @@ h1{
 	text-align: center;
 	border: solid 5px yellow;
 	font-size: 120%;
-
-	
+	font-weight: bolder;	
 }
 
 .active a{
@@ -99,6 +98,10 @@ items in the nav section*/
 
 nav {
 	background-color:lightblue;
+}
+
+nav ul {
+	display:grid;
 }
 
 nav li{
@@ -204,10 +207,21 @@ input {
 	
   }
   
-  *:focus {
+  input:focus {
 	border: 5px solid blue;
 	background-color: yellow;
+	color:black;
   }
+
+  textarea:focus {
+	border: 5px solid blue;
+	background-color: yellow;
+	color:black;
+  }	
+
+  
+
+  
 
   /*icon*/
   .fa-solid {
@@ -248,5 +262,11 @@ input {
 .grid img,
 .flex img {
 	width: 90%;
+	margin-left: auto;
+    margin-right: auto;
 }
 
+
+img {
+	width:90%;
+}
