@@ -104,11 +104,11 @@ nav {
 nav li{
 	/* background-color: rgb(233, 233, 233);*/
 	padding:20px;
-	width:25%;
+	/* width:25%; */
 	/* border:1px solid rgb(148, 148, 144);*/
 	display: inline-block;
 	text-align: center;
-	width: 20%;
+	/* width: 20%; */
 	margin: 20px;
 }
 
@@ -186,6 +186,10 @@ input {
 	font-size: 15px;
   }
 
+  input[type=checkbox] {
+	  width:auto;
+  }
+
   input[type=submit] {
 	font-size: 80%;
 	background-color:rgb(33, 150, 189);
@@ -199,7 +203,7 @@ input {
 	width: 100%;
 	
   }
-
+  
   *:focus {
 	border: 5px solid blue;
 	background-color: yellow;
@@ -228,3 +232,21 @@ input {
         animation: none;
     }
 }
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	
+}
+
+.grid img,
+.flex img {
+	width: 90%;
+}
+
